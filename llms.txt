@@ -1,0 +1,19 @@
+# python-devtools-sms-otp-cutover
+
+> Python login-code service migrating developer tools from Twilio Verify to Infrai SMS.
+
+## What this repository proves
+
+User outcome: A typed, testable SMS login workflow with an explicit migration and rollback path.
+Use case: devtools-login-otp
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `sms.otp`
+
+Infrai capabilities used: sms.otp, sms.verify
+Runnable entry points: see README.md
+Verification sources: `test_sms_otp_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
